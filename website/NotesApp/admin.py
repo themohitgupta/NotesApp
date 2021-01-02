@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from . models import NotesApp
+
+admin.site.register(NotesApp)
