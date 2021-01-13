@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from . models import NotesApp
+# from . models import NotesApp
 
-admin.site.register(NotesApp)
+# admin.site.register(NotesApp)
