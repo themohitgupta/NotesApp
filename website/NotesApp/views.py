@@ -33,3 +33,8 @@ def delete_note(request, pk):
         note.delete()
     return redirect('note_list')
 
+def search(request):
+    allnotes = Note.objects.all()
+    params = {'allnotes': allnotes}
+    return render(request, 'search.html')
+    

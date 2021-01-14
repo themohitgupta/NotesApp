@@ -4,4 +4,4 @@ from .models import Note
 class NoteForm(forms.ModelForm):
     class Meta:
         model = Note
-        fields = ('title', 'author', 'pdf',)
+        fields = ('title', 'author', 'allfiles',)
