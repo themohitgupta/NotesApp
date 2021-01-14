@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<title>AecNotes - BCA-Second Year</title>
+
+
+    <!-- NAvbar Open -->
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="{% url 'index' %}">AEC-NOTES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'note_list' %}">Notes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'upload_note' %}">Upload</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+    </div>
+
+    <!-- Navbar Close -->
+     <div class="container sem_box">
+        <div class="row ">
+            <div class="col-xs-10 col-sm-3">
+            
+              <h1>semester 3</h1>
+            
+              <a href="#">Data Base Management System</a>
+            	 <a href="#">E-Commerce and ERP</a>
+            	 <a href="#">Computer Organization and Architecture</a>
+            	 <a href="#">Operating System with the case study of UNIX & Windows</a>
+            	 <a href="#">Statical Method and Application</a>
+            
+               <br>
+            
+               <h1>semester 4</h1>
+            
+               <a href="#">Java Programming</a>
+            	 <a href="#">Web Technology using PHP and Mysql</a>
+            	 <a href="#">Artificial Intelligence</a>
+            	 <a href="#">Computer Network</a>
+            	 <a href="#">Optimization Techniques</a>
+            
+              </div>
+         </div>   
+     </div>    
+
+{% endblock %}

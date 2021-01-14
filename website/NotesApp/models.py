@@ -5,7 +5,7 @@ from pymongo import settings
 
 class Note(models.Model):
     title = models.CharField(max_length=100)
-    author = models.CharField(max_length=100)
+    Upload_By = models.CharField(max_length=100)
     allfiles = models.FileField(upload_to='Notes/allfiles/')
 
 def __str__(self):

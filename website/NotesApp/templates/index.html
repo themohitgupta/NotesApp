@@ -2,7 +2,8 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +15,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" >
 
     <title>AEC-NOTES</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -24,26 +26,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <!-- NAvbar Open -->
-    
+
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="{% url 'index' %}">AEC-NOTES</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="{% url 'note_list' %}">Notes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="{% url 'upload_note' %}">Upload</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </nav>
+        </nav>
     </div>
 
     <!-- Navbar Close -->
-    
+
     <div class="container-fluid search_bar">
         <form method="GET" action="/search" class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" id="search">
@@ -59,137 +61,138 @@
         <div class="row ">
             <div class="col-xs-10 col-sm-3">
                 <div class="box">
-                  <div class="dropdown">
-  					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bachelor of Computer Application</a>
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    						<a class="dropdown-item" href="#">1st Year</a>
-    						<a class="dropdown-item" href="#">2nd Year</a>
-    						<a class="dropdown-item" href="#">3rd Year</a>
-  						</div>
-					</div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bachelor of Computer Application</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{% url 'firstyear' %}">1st Year</a>
+                            <a class="dropdown-item" href="{% url 'secondyear' %}">2nd Year</a>
+                            <a class="dropdown-item" href="{% url 'thirdyear' %}">3rd Year</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-10 col-sm-3">
                 <div class="box">
-                  <div class="dropdown">
-  					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bachelor of Business Administration</a>
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    						<a class="dropdown-item" href="#">1st Year</a>
-    						<a class="dropdown-item" href="#">2nd Year</a>
-    						<a class="dropdown-item" href="#">3rd Year</a>
-  						</div>
-					</div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bachelor of Business Administration</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-3">
                 <div class="box">
-                  <div class="dropdown">
-  					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Computer Science & Engineering</a>
-  						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    						<a class="dropdown-item" href="#">1st Year</a>
-    						<a class="dropdown-item" href="#">2nd Year</a>
-    						<a class="dropdown-item" href="#">3rd Year</a>
-    						<a class="dropdown-item" href="#">4th Year</a>
-  						</div>
-					</div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Computer Science & Engineering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4th Year</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="col-xs-10 col-sm-3">
-              <div class="box">
-                <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics & Electrical Engineering</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">1st Year</a>
-              <a class="dropdown-item" href="#">2nd Year</a>
-              <a class="dropdown-item" href="#">3rd Year</a>
-              <a class="dropdown-item" href="#">4rd Year</a>
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics & Electrical Engineering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4rd Year</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-              </div>
-          </div>
 
-          <div class="col-xs-10 col-sm-3">
-            <div class="box">
-              <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Civil Engineering	</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">1st Year</a>
-            <a class="dropdown-item" href="#">2nd Year</a>
-            <a class="dropdown-item" href="#">3rd Year</a>
-            <a class="dropdown-item" href="#">4rd Year</a>
-          </div>
-      </div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Civil Engineering </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4rd Year</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="col-xs-10 col-sm-3">
-          <div class="box">
-            <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics & Communication Engineering</a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">1st Year</a>
-          <a class="dropdown-item" href="#">2nd Year</a>
-          <a class="dropdown-item" href="#">3rd Year</a>
-          <a class="dropdown-item" href="#">4rd Year</a>
-        </div>
-    </div>
-          </div>
-      </div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics & Communication Engineering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4rd Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-xs-10 col-sm-3">
-        <div class="box">
-          <div class="dropdown">
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mechanical Engineering</a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1st Year</a>
-        <a class="dropdown-item" href="#">2nd Year</a>
-        <a class="dropdown-item" href="#">3rd Year</a>
-        <a class="dropdown-item" href="#">4rd Year</a>
-      </div>
-  </div>
-        </div>
-    </div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mechanical Engineering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4rd Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="col-xs-10 col-sm-3">
-      <div class="box">
-        <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bio-Technology</a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" href="#">1st Year</a>
-      <a class="dropdown-item" href="#">2nd Year</a>
-      <a class="dropdown-item" href="#">3rd Year</a>
-      <a class="dropdown-item" href="#">4rd Year</a>
-    </div>
-</div>
-      </div>
-  </div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bio-Technology</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                            <a class="dropdown-item" href="#">3rd Year</a>
+                            <a class="dropdown-item" href="#">4rd Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div class="col-xs-10 col-sm-3">
-    <div class="box">
-      <div class="dropdown">
-<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master of Business Administration</a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">1st Year</a>
-    <a class="dropdown-item" href="#">2nd Year</a>
-  </div>
-</div>
-    </div>
-</div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master of Business Administration</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="col-xs-10 col-sm-3">
-  <div class="box">
-    <div class="dropdown">
-<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">M.Tech Production Engineering</a>
-<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-  <a class="dropdown-item" href="#">1st Year</a>
-  <a class="dropdown-item" href="#">2nd Year</a>
-</div>
-</div>
-  </div>
-</div>
+            <div class="col-xs-10 col-sm-3">
+                <div class="box">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">M.Tech Production Engineering</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">1st Year</a>
+                            <a class="dropdown-item" href="#">2nd Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 </body>
+
 </html>

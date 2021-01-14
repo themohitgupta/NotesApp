@@ -38,3 +38,11 @@ def search(request):
     params = {'allnotes': allnotes}
     return render(request, 'search.html')
     
+def firstyear(request):
+    return render(request, 'firstyear.html')
+
+def secondyear(request):
+    return render(request, 'secondyear.html')
+
+def thirdyear(request):
+    return render(request, 'thirdyear.html')

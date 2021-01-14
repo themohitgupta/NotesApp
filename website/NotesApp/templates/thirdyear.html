@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<title>AecNotes-BCA-First Year</title>
+
+    <!-- NAvbar Open -->
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="{% url 'index' %}">AEC-NOTES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'note_list' %}">Notes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'upload_note' %}">Upload</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+    </div>
+
+    <!-- Navbar Close -->
+     <div class="container sem_box">
+        <div class="row ">
+            <div class="col-xs-10 col-sm-3">
+            
+              <h1>semester 5</h1>
+            
+              <a href="#">Computer Fundamentals and Ms Office</a>
+            	 <a href="#">Introduction to Programming using C</a>
+            	 <a href="#">Bussiness Communication and Soft Skills</a>
+            	 <a href="#">Introduction to HTML,CSS-XML</a>
+            	 <a href="#">Mathematics-1</a>
+            
+               <br>
+            
+               <h1>semester 6</h1>
+            
+               <a href="#">Object Oriented Programming Using C++</a>
+            	 <a href="#">Digital Electronics</a>
+            	 <a href="#">Data Structure Using C/C++</a>
+            	 <a href="#">Principal of Management</a>
+            	 <a href="#">Numerical Methods</a>
+            
+              </div>
+         </div>   
+     </div>    
+
+{% endblock %}
